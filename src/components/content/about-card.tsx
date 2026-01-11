@@ -1,0 +1,44 @@
+"use client";
+
+import { Card } from "@/components/ui/card";
+import { profile } from "@/data/profile";
+import { Badge } from "lucide-react";
+
+export function AboutCard() {
+    return (
+        <div className="space-y-6 animate-in slide-in-from-bottom-5 fade-in duration-500">
+            <div className="space-y-4">
+                <h2 className="text-2xl font-serif text-primary">About Me</h2>
+                <p className="text-secondary leading-relaxed max-w-2xl text-base md:text-lg">
+                    {profile.bio}
+                </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="bg-surface border border-border p-4 rounded-xl">
+                    <h3 className="font-medium mb-2 text-primary">Experience</h3>
+                    <ul className="space-y-3">
+                        <li className="flex gap-3 text-sm">
+                            <span className="text-secondary w-12 text-right font-mono">2024-</span>
+                            <span>Senior Product Designer @ Tech Corp</span>
+                        </li>
+                        <li className="flex gap-3 text-sm">
+                            <span className="text-secondary w-12 text-right font-mono">2022-</span>
+                            <span>Frontend Developer @ Audit Studio</span>
+                        </li>
+                    </ul>
+                </div>
+                <div className="bg-surface border border-border p-4 rounded-xl">
+                    <h3 className="font-medium mb-2 text-primary">Technoloies</h3>
+                    <div className="flex flex-wrap gap-2">
+                        {["Next.js", "React", "TypeScript", "Tailwind", "Figma", "Node.js"].map(tag => (
+                            <span key={tag} className="px-2 py-1 bg-surface-hover text-xs rounded text-secondary border border-border">
+                                {tag}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
