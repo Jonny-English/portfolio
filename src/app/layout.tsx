@@ -19,7 +19,7 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Designer | Digital Craftsman",
+  title: "Slias Li | Digital Craftsman",
   description: "Product Designer & Frontend Developer portfolio.",
 };
 
