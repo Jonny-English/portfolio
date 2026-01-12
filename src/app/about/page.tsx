@@ -67,7 +67,7 @@ export default function AboutPage() {
             <section className="bg-surface/50 border border-border p-6 rounded-xl">
                 <h2 className="font-medium mb-4 text-primary">Technical Stack</h2>
                 <div className="flex flex-wrap gap-2">
-                    {["Next.js", "React", "TypeScript", "Tailwind", "Figma", "Node.js", "PostgreSQL", "Three.js"].map(tag => (
+                    {["AI", "C++", “Python”,"Data Structures and Algorithms","Computer Organization and Architecture","Operating Systems","Computer Networks"].map(tag => (
                         <span key={tag} className="px-3 py-1.5 bg-build text-sm rounded-md text-secondary border border-border/50 shadow-sm">
                             {tag}
                         </span>
