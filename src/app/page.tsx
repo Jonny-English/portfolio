@@ -29,10 +29,12 @@ export default function Home() {
           {heroPost ? (
             <Link href="/writing" className="group block space-y-4">
               <div className="aspect-[16/9] bg-surface border border-border rounded-xl relative overflow-hidden shadow-sm">
-                {/* Placeholder for cover image */}
-                <div className="absolute inset-0 bg-surface flex items-center justify-center text-secondary/30 text-4xl font-serif">
-                  Briefing
-                </div>
+                {/* Cover image */}
+                <img
+                  src="unname.jpg"
+                  alt="Featured Writing"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
               </div>
               <h1 className="text-3xl md:text-4xl font-serif font-medium text-primary group-hover:text-accent transition-colors leading-tight">
                 {heroPost.title}
@@ -47,9 +49,11 @@ export default function Home() {
           ) : (
             <div className="group block space-y-4">
               <div className="aspect-[16/9] bg-surface border border-border rounded-xl relative overflow-hidden shadow-sm">
-                <div className="absolute inset-0 bg-surface flex items-center justify-center text-secondary/30 text-4xl font-serif">
-                  Briefing
-                </div>
+                <img
+                  src="unname.jpg"
+                  alt="Featured Writing"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
               </div>
               <h1 className="text-3xl md:text-4xl font-serif font-medium text-primary leading-tight">
                 Featured Writing
