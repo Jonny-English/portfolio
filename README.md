@@ -39,7 +39,7 @@ TypeScript        —   思维的纪律
 工具不应该成为障碍。
 
 ```bash
-git clone https://github.com/Jonny-English/portfolio.git
+git clone https://github.com/Jonny-English/silias-li.git
 cd portfolio
 npm install
 npm run dev
@@ -201,7 +201,7 @@ rather than letting the framework perform.
 Tools should not become obstacles.
 
 ```bash
-git clone https://github.com/Jonny-English/portfolio.git
+git clone https://github.com/Jonny-English/silias-li.git
 cd portfolio
 npm install
 npm run dev
